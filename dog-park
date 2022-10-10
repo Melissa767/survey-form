@@ -41,7 +41,7 @@
             <option value="3">Flyer</option>
             <option value="4">Online</option>
             <option value="5">Friend</option>
-            <option value "6">Word of mouth</option>
+            <option value="6">Word of mouth</option>
           </select>
         </fieldset>
         <fieldset>
