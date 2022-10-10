@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Wag-Tails Dog Park</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+      <h1 id="title">Wag-Tails Dog Park Registration Form</h1>
+      <p id="description"><em>Please fill out this form with the required information about your pup!</em></p>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label" >Enter Your Name: <input for="name" type="text" required placeholder="Name" id="name"/></label>
+          <label for="email" id="email-label">Enter Your Email: <input id="email" type="email" required for="survey-form" placeholder="Email"/></label>
+          <label for="dog-name" id="name-label">Your Dog's Name: <input id="dog-name" type="text" required placeholder="Dog Name"/></label>
+          <label for="dog-age" id="number-label">Dog's Age: <input id="number" type="number" min="1" max="10" placeholder="Age" required/></label>
+        </fieldset>
+        <fieldset class="inline">
+          <label>What is the gender of your dog?</label>
+          <input class= "inline" type="radio" id="male" name="male-female" value="male"/> Male
+          <input class="inline" type="radio" id="female" name="male-female" value="female"/> Female
+        </fieldset>
+        <fieldset class="inline">
+          <label>To evaluate temperament, please select all that apply:</label>
+          <input class="inline" type="checkbox" id="gets-along-with-small-dogs" value="gets-along-with-small-dogs"/> Gets along with small dogs<br>
+          <input class="inline" type="checkbox" id="gets-along-with-big-dogs" value="gets-along-with-big-dogs"/> Gets along with big dogs<br>
+          <input class="inline" type="checkbox" id="guards-food" value="guards-food"/> Guards food<br>
+          <input class="inline" type="checkbox" id="guards-toys" value="guards-toys"/> Guards toys<br>
+          <input class="inline" type="checkbox" id="high-energy" value="high-energy"/> High energy<br>
+          <input class="inline" type="checkbox" id="medium-energy" value="medium-energy"/> Medium energy<br>
+          <input class="inline" type="checkbox" id="low-energy" value="low-energy"/> Low energy<br>
+          <input class="inline" type="checkbox" id="displays-discomfort" value="displays-discomfort"/> Displays discomfort (If so, where):_________<br>
+          <input class="inline" type="checkbox" id="has-food-allergies" value="has-food-allergies"/> Has food allergies (If so, list allergies):__________
+        </fieldset>
+        <fieldset>
+          <label>How did you hear about us? (Select one)</label>
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Instagram</option>
+            <option value="2">Facebook</option>
+            <option value="3">Flyer</option>
+            <option value="4">Online</option>
+            <option value="5">Friend</option>
+            <option value "6">Word of mouth</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label>Provide a short bio about your dog:</label>
+          <textarea rows="3" cols="30" placeholder="My dog likes to..."></textarea>
+        </fieldset>
+        <input type="submit" id="submit" for="survey-form"/>
+        </form>
+      </body>
+      </html>
